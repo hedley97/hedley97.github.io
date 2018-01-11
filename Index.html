@@ -1,0 +1,281 @@
+<!Doctype html>
+<html>
+<title>CMP1130M Web Authoring</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("images/parallax1.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Products) */
+.bgimg-2 {
+    background-image: url("images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+/* Turns off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar"><a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onClick="toggleFunction()" title="Toggle Navigation Menu"> 
+  <i class="fa fa-bars"></i> 
+  </a> 
+  <a href="Index.html" class="bar-item button">HOME</a> 
+  <a href="#about" class="bar-item button hide-small"> <em class="fa fa-user"></em> ABOUT</a>
+   
+  <a href="#Products" class="bar-item button hide-small"> <em class="fa fa-th"></em> PRODUCTS </a> 
+  
+  <a href="#contact" class="bar-item button hide-small"><em class="fa fa-envelope"></em> CONTACT</a> 
+  
+  <a href="Demo.html" class="bar-item button hide-small"> DEMO</a> 
+  
+  <a href="Log.html" class="bar-item button hide-small"> LOG </a> 
+  
+  <a href="#" class="bar-item button hide-small right hover-red"> 
+  <i class="fa fa-search"></i> 
+  
+  </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#Products" class="bar-item button" onclick="toggleFunction()">PRODUCTS</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+     <a href="Demo.html" class="bar-item button" onclick="toggleFunction()">DEMO</a>
+      <a href="Log.html" class="bar-item button" onclick="toggleFunction()">LOG</a>
+    <a href="#" class="bar-item button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large xlarge wide animate-opacity"> <img class = "logoImg" src="images/logo.png" /> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT ME</h3>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <p><b><i class="fa fa-user margin-right"></i>Harry Gallagher</b></p><br>
+      <img src="images/Harry.jpg" class="round image hover-opacity-off opacity " alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="col m6 hide-small padding-large">
+      <p>Welcome to my website. I am Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur mollis nibh, non tristique justo tristique eu. Pellentesque vel ex rutrum, ultrices turpis ornare, pellentesque orci. Pellentesque sed ipsum a orci congue dictum. Aliquam aliquam, turpis a ultricies elementum, nisl est congue purus, id ullamcorper nunc quam et quam. Pellentesque convallis ut erat id convallis. Duis gravida nunc nisi, venenatis imperdiet metus suscipit ut. Fusce consectetur quam nunc, non finibus lacus pellentesque in. Donec dictum aliquam est, tempor bibendum quam convallis sed. Phasellus semper condimentum ante, quis aliquam augue sollicitudin eget. Donec mattis porta metus sed dignissim. Donec arcu diam, iaculis id neque ut, lobortis eleifend enim. Donec dolor ipsum, viverra et maximus a, vulputate quis tellus. Fusce laoreet finibus nunc, sit amet porttitor neque varius in. Sed sagittis magna at augue mattis, in tincidunt ipsum tincidunt. Nullam accumsan sodales leo, id auctor elit consequat ut. Pellentesque vel arcu in nisi ultrices vehicula id vel dui.</p>
+    </div>
+  </div>
+  <p class="large center padding-16"></p>
+	</div>
+
+<div class="row center padding-16">
+  <div class="quarter section"></div>
+</div>
+
+<!-- Second Parallax Image with Products Text -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">PRODUCTS</span>
+  </div>
+</div>
+
+<!-- Container (Products Section) -->
+<div class="content container padding-64" id="Products">
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/products1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="NS EVOUCHER/GIFTCARD">
+    </div>
+
+    <div class="col m3">
+      <img src="images/products2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="NS Baseball Cap - Black">
+    </div>
+
+    <div class="col m3">
+      <img src="images/products3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="N I G H T S C A P E Long Sleeve Tee - White">
+    </div>
+
+    <div class="col m3">
+      <img src="images/products4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="N I G H T S C A P E Tee - White">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/products5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="N I G H T S C A P E Long Sleeve Tee - Black">
+    </div>
+
+    <div class="col m3">
+      <img src="images/products6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="N I G H T S C A P E Tee - Black">
+    </div>
+
+    <div class="col m3">
+      <img src="images/products7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="NS Original White T Shirt">
+    </div>
+
+    <div class="col m3">
+      <img src="images/products8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="NS Original Black T's">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">x
+  <span class="button large black display-topright" title="Close Modal Image">
+  <i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Products Text -->
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="content container padding-64" id="contact">
+
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="round-large greyscale" style="width:100%;height:400px;"></div>
+   
+    <div id="Map" style="width:100%;height:400px"></div> </div>
+    <div class="col m8 panel">
+      <div class="large margin-bottom">
+        <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Lincoln, UK<br>
+        <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: 123456878<br>
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: nightscape@gmail.com<br>
+      </div>
+      <p> 
+      <h1>Join our Mailing List</h1>
+		Sign up to our Mailing List today and receive a 10% Discount Bonus Code valid indefinitely.</p>
+
+<p>You will receive updates and notifications of all upcoming Sales, Special Events, New Product Launches, Special Bonus Codes and lots more.... </p>
+
+	  <p>Thank You</p> 
+
+ 
+
+<p>NB Code issued within 24 hours</p>
+
+<p>Excludes EVoucher </p>
+      <form action="/action_page.php" target="_blank">
+        <div class="row-padding" style="margin:0 -16px 8px -16px">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="half">
+            <input class="input border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="input border" type="text" placeholder="Message" required name="Message">
+        <button class="button black right section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity">  </i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </div>
+</footer>
+ 
+
+
+<script type="text/javascript" src="js/javascript.js"></script>
+    <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+    
+}
+        </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7MJW8ZfvIFZQEC6TvJ1U5MRu_CTmnJMs&callback=myMap"></script>
+</body>
+</html>
